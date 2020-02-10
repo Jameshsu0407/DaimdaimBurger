@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+
+nav{
+    background: #F9C300;
+    /* 顯示：靈活 */
+    display: flex;
+    /* 均勻排列每個子元素 首個放起點 最後放終點 */
+    justify-content: space-between;
+    padding: 20px;
+    /* 固定著 */
+    position: sticky;
+    /* 固定在最上方 */
+    top: 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    height: 120px;
+    /* 深度 數字越大距離使用者越近 */
+    z-index: 1;
+}
+
+nav ol li{
+    display: inline-block;
+    padding: 30px;
+    /* 動畫時間0.8秒 */
+    transition: 0.8s;
+}
+
+nav ol li:hover{
+    /* 放大1.3倍 */
+    transform: scale(1.3);
+}
+
+nav ol li a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#logo img{
+    width: 80px;
+    background: #FFF;
+    border-radius: 50%;
+    padding: 10px;
+    /* 動畫時間1秒 */
+    transition: 1s;
+}
+
+#logo img:hover{
+    /* 放大1.1倍 */
+    transform: scale(1.1);
+}
+
+#banner{
+    height: 100vh;
+    background-image: url(./image/menu.png);
+    background-size: cover;
+    margin-top: -120px;
+    /* 動畫時間2秒 */
+    transition: 2s;
+}
+
+#banner:hover{
+    /* 放大1.15倍 */
+    transform: scale(1.15);
+}
+
+#banner-box{
+    /* 遮住溢出的部分 */
+    overflow: hidden;
+}
+
+/* 文字區域 */
+section h1{
+    color: #F9C300;
+    font-size: 32px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#month, #partner, #news {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#news img {
+    width: 100%;
+}
+
+#partner li {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+/* 頁尾 footer */
+footer {
+    background: #F9C300;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 120px;
+}
